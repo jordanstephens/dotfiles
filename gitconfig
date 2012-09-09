@@ -1,17 +1,17 @@
 [user]
-	name = Jordan Stephens
-	email = iam@jordanstephens.net
+  name = Jordan Stephens
+  email = iam@jordanstephens.net
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+  editor = vim
+  excludesfile = ~/.gitignore
 [color]
   diff = auto
   status = auto
   branch = auto
 [color "status"]
-	added = cyan
-	untracked = red
-	changed = green
+  added = cyan
+  untracked = red
+  changed = green
 [alias]
-	st = status
+  st = status
 
