@@ -20,6 +20,9 @@ set number
 set showcmd
 set showmatch
 set laststatus=2
+set wildmenu
+set wildmode=full
+
 set scrolloff=20
 
 set shiftwidth=2
