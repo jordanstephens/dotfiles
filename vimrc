@@ -47,7 +47,12 @@ set splitright
 " Strip whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+let mapleader = ','
+
 nnoremap <return> :noh<return><esc>
+
+" less tedious mapping for tComment
+map <leader>/ <c-_><c-_>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
