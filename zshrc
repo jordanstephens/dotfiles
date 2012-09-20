@@ -9,7 +9,7 @@ EDITOR="vim"
 PROMPT="%~ %% "
 
 # add rbenv to path
-PATH=$HOME/.rbenv/bin:$PATH
+PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
 
 export GREP_OPTIONS='--color=auto --exclude=*.swp --exclude-dir=.svn'
 export SVN_EDITOR=vim
