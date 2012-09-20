@@ -43,6 +43,8 @@ bindkey -e
 # augment up and down arrows to iterate through history beginning with a partially typed command
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
 
 alias bex='bundle exec'
 alias ..='cd ..'
