@@ -6,7 +6,15 @@ SAVEHIST=1000
 
 EDITOR="vim"
 
-PROMPT="%~ %% "
+function __git_branch {
+  git rev-parse --git-dir >& /dev/null
+  if [[ $? == 0 ]]
+  then
+    echo -n "[$(git branch | grep '* ' | sed 's/..//')] "
+  fi
+}
+
+PROMPT='%~ $(__git_branch)%% '
 
 # add rbenv to path
 PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
@@ -29,6 +37,7 @@ setopt hist_expire_dups_first
 setopt hist_find_no_dups
 setopt hist_save_no_dups
 
+setopt prompt_subst
 setopt rmstarsilent
 
 unsetopt autocd beep nomatch extendedglob
