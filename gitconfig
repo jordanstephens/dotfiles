@@ -14,4 +14,7 @@
   changed = green
 [alias]
   st = status
+  co = checkout
+  ci = commit
+  df = diff
 
