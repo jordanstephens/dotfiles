@@ -6,11 +6,19 @@ SAVEHIST=1000
 
 EDITOR="vim"
 
+function __git_dirty {
+  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]
+}
+
 function __git_branch {
   git rev-parse --git-dir >& /dev/null
   if [[ $? == 0 ]]
   then
-    echo -n "[$(git branch | grep '* ' | sed 's/..//')] "
+    branch_name=$(git branch | grep '* ' | sed 's/..//')
+
+    if __git_dirty; then color=yellow; else color=green; fi
+
+    echo -n "[%{$fg[$color]%}$branch_name%{$reset_color%}] "
   fi
 }
 
