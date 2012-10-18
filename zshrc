@@ -27,7 +27,7 @@ PROMPT='%~ $(__git_branch)%% '
 # add rbenv to path
 PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
 
-export GREP_OPTIONS='--color=auto --exclude=*.swp --exclude-dir=.svn'
+export GREP_OPTIONS='--color=auto --exclude=*.swp'
 export SVN_EDITOR=vim
 export PAGER='less -R'
 
