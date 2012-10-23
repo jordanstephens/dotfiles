@@ -64,6 +64,7 @@ bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
 alias bex='bundle exec'
+alias bake='bundle exec rake'
 alias ..='cd ..'
 alias g='grep -inr'
 alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
