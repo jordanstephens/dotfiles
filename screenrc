@@ -1,0 +1,11 @@
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'
+
+screen -t E 4
+screen -t D 3
+screen -t C 2
+screen -t B 1
+screen -t A 0
+
+bindkey "\012" prev # c-l
+bindkey "\014" next # c-j
