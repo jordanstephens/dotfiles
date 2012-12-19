@@ -18,6 +18,8 @@ set autoread
 set nobackup
 set noswapfile
 
+set history=1000
+
 set ruler
 set number
 set showcmd
