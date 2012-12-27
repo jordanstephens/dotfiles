@@ -16,5 +16,13 @@ Update plugin submodules
 You will want to change your login shell to zsh
 
     chsh -s /bin/zsh
+    
+* * *
+    
+**Important:** Don't forget to update the `[user]` stanza in `.gitconfig` so that your information is reflected rather than mine
+
+    [user]
+      name = Your Name
+      email = your@email.com
 
 That's all for now
