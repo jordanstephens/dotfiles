@@ -13,7 +13,7 @@
   untracked = red
   changed = green
 [alias]
-  st = status
+  st = status -sb
   co = checkout
   ci = commit
   df = diff
