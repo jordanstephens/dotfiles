@@ -68,8 +68,8 @@ alias bake='bundle exec rake'
 alias ..='cd ..'
 alias g='grep -inr'
 alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
-alias ll='ls -l'
-alias la='ls -la'
+alias ll='ls -lh'
+alias la='ls -lha'
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
