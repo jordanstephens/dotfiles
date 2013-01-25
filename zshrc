@@ -6,6 +6,10 @@ SAVEHIST=1000
 
 EDITOR="vim"
 
+# run bundled scripts with 'bundle exec' when appropriate
+# https://github.com/gma/bundler-exec
+[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
+
 function __git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]
 }
