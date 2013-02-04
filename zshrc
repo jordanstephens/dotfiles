@@ -71,7 +71,7 @@ alias bex='bundle exec'
 alias bake='bundle exec rake'
 alias ..='cd ..'
 alias g='grep -inr'
-alias gl='git log --graph --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gl='git log --graph --pretty="format:$fg[yellow]%h$fg[green]%d$reset_color %s $fg_bold[black]%an, %ar$reset_color"'
 alias ll='ls -lh'
 alias la='ls -lha'
 
