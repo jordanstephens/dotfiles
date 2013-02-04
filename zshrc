@@ -28,6 +28,11 @@ function __git_branch {
 
 PROMPT='%~ $(__git_branch)%% '
 
+# this could be more robust, but it's adequate
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  PROMPT="[%{$fg[cyan]%}%m%{$reset_color%}] $PROMPT"
+fi
+
 # add rbenv to path
 PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
 
