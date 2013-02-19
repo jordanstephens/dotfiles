@@ -56,6 +56,9 @@ nnoremap <return> :noh<return><esc>
 " less tedious mapping for tComment
 map <leader>/ <c-_><c-_>
 
+" map ctrlp to `;`
+:nmap ; :CtrlP<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
