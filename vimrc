@@ -58,6 +58,7 @@ map <leader>/ <c-_><c-_>
 nmap j gj
 nmap k gk
 
+" clear highlighting with the return key
 nnoremap <return> :noh<return><esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
