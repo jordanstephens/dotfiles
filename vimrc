@@ -13,6 +13,7 @@ set fileencodings=utf-8
 set t_Co=256
 set background=dark
 colorscheme molokai
+set guifont=Monaco:h16
 
 set autoread
 set nobackup
