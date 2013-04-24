@@ -54,13 +54,15 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 let mapleader = ','
 
-nnoremap <return> :noh<return><esc>
-
 " less tedious mapping for tComment
 map <leader>/ <c-_><c-_>
 
-" map ctrlp to `;`
-:nmap ; :CtrlP<CR>
+" move up and down by visual lines rather than by actual file lines
+nmap j gj
+nmap k gk
+
+" clear highlighting with the return key
+nnoremap <return> :noh<return><esc>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
