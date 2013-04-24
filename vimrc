@@ -31,10 +31,12 @@ set wildmode=full
 
 set scrolloff=20
 
-set shiftwidth=2
-set tabstop=2
 set expandtab
 set autoindent
+set shiftwidth=2
+set tabstop=2
+
+autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 set incsearch
 set ignorecase
