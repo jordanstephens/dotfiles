@@ -11,7 +11,7 @@ EDITOR="vim"
 [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 
 function __git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]
+  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]]
 }
 
 function __git_branch {
@@ -36,7 +36,7 @@ fi
 # add rbenv to path
 PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
 
-export GREP_OPTIONS='--color=auto --exclude=*.swp'
+export GREP_OPTIONS='--color=auto --exclude=*.swp --exclude-dir=.git'
 export SVN_EDITOR=vim
 export PAGER='less -R'
 

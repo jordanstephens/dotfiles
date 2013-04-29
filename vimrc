@@ -17,6 +17,7 @@ set fileencodings=utf-8
 set t_Co=256
 set background=dark
 colorscheme molokai
+set guifont=Monaco:h16
 
 set autoread
 set nobackup
@@ -34,10 +35,12 @@ set wildmode=full
 
 set scrolloff=20
 
-set shiftwidth=2
-set tabstop=2
 set expandtab
 set autoindent
+set shiftwidth=2
+set tabstop=2
+
+autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 set incsearch
 set ignorecase
