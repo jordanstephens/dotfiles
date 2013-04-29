@@ -6,6 +6,10 @@ set nocompatible
 
 syntax on
 
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins
+
 set encoding=utf-8
 set fileencodings=utf-8
 
