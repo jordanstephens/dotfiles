@@ -4,7 +4,7 @@ HISTFILE=$HOME/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 
-EDITOR="vim"
+export EDITOR="vim"
 
 # run bundled scripts with 'bundle exec' when appropriate
 # https://github.com/gma/bundler-exec
