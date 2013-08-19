@@ -4,6 +4,8 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore
+[help]
+	autocorrect = 1
 [color]
   diff = auto
   status = auto
