@@ -72,7 +72,7 @@ bindkey '^[[B' down-line-or-search
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
-alias bex='bundle exec'
+alias be='bundle exec'
 alias bake='bundle exec rake'
 alias ..='cd ..'
 alias g='grep -inr'
