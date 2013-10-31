@@ -79,6 +79,8 @@ alias g='grep -inr'
 alias gl='git log --graph --pretty="format:$fg[yellow]%h$fg[green]%d$reset_color %s $fg_bold[black]%an, %ar$reset_color"'
 alias ll='ls -lh'
 alias la='ls -lha'
+alias sc='starcluster'
+alias scssh='starcluster sn -u moto'
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
