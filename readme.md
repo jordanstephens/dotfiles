@@ -17,4 +17,9 @@ Clone the repo and run the install script from your home directory
       name = Your Name
       email = your@email.com
 
-That's all for now
+## Adding Vim Plugins
+
+Use **git submodules** to add new vim plugins.
+
+    git submodule add https://github.com/user/plugin-name.git vim/plugin-name
+
