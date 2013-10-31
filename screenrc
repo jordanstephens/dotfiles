@@ -3,6 +3,8 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{=kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)
 
 defscrollback 5000
 
+screen -t G 6
+screen -t F 5
 screen -t E 4
 screen -t D 3
 screen -t C 2
