@@ -54,6 +54,8 @@ setopt hist_expire_dups_first
 setopt hist_find_no_dups
 setopt hist_save_no_dups
 
+setopt no_case_glob
+
 setopt prompt_subst
 setopt rmstarsilent
 
@@ -62,6 +64,8 @@ unsetopt autocd beep nomatch extendedglob
 zstyle :compinstall filename "$HOME/.zshrc"
 
 autoload -Uz compinit ; compinit
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # use emacs mode keybindings
 bindkey -e
