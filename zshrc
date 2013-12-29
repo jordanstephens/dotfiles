@@ -22,11 +22,11 @@ function __git_branch {
 
     if __git_dirty; then color=yellow; else color=green; fi
 
-    echo -n ":%{$fg[$color]%}$branch_name%{$reset_color%} "
+    echo -n ":%{$fg[$color]%}$branch_name%{$reset_color%}"
   fi
 }
 
-PROMPT='%~$(__git_branch)%% '
+PROMPT='%~$(__git_branch) %% '
 
 # this could be more robust, but it's adequate
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
