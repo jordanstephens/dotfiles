@@ -19,6 +19,7 @@
   co = checkout
   ci = commit
   df = diff
+  ds = diff --stat
   search = log -S
   # delete local tags, replace with remote tags
   synctags = !git tag -l | xargs git tag -d && git fetch --tags
