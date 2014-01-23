@@ -85,6 +85,7 @@ alias ll='ls -lh'
 alias la='ls -lha'
 alias sc='starcluster'
 alias scssh='starcluster sn -u moto'
+alias irb='pry'
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
