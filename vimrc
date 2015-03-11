@@ -21,6 +21,7 @@ let base16colorspace=256
 set background=dark
 
 set guifont=Monaco:h16
+set guioptions-=T     " Remove toolbar
 
 set autoread
 set nobackup
