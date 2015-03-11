@@ -17,8 +17,9 @@ set fileencodings=utf-8
 
 " use 256 colors
 set t_Co=256
+let base16colorspace=256
 set background=dark
-colorscheme molokai
+
 set guifont=Monaco:h16
 
 set autoread
