@@ -21,5 +21,5 @@ Clone the repo and run the install script from your home directory
 
 Use **git submodules** to add new vim plugins.
 
-    git submodule add https://github.com/user/plugin-name.git vim/plugin-name
+    git submodule add https://github.com/user/plugin-name.git vim/bundle/plugin-name
 
