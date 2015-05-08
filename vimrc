@@ -64,6 +64,7 @@ let mapleader = ','
 
 " less tedious mapping for tComment
 map <leader>/ <c-_><c-_>
+map <leader><return> :noh<return><esc>
 
 " move up and down by visual lines rather than by actual file lines
 nmap j gj
