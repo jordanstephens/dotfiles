@@ -1,6 +1,6 @@
 [user]
   name = Jordan Stephens
-  email = iam@jordanstephens.net
+  email = jordan@stephens.io
 [core]
   editor = vim
   excludesfile = ~/.gitignore
