@@ -87,6 +87,7 @@ alias sc='starcluster'
 alias scssh='starcluster sn -u moto'
 alias irb='pry'
 alias serve='ruby -run -e httpd . -p 9090'
+alias gti='git'
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 

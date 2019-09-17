@@ -17,10 +17,11 @@
 [alias]
   st = status -sb
   co = checkout
-  ci = commit
+  cm = commit
   df = diff
   ds = diff --stat
+  rb = rebase
+  pl = pull
   search = log -S
-  # delete local tags, replace with remote tags
-  synctags = !git tag -l | xargs git tag -d && git fetch --tags
+  branches = branch --sort=-committerdate
 
