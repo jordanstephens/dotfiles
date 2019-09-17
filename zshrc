@@ -86,6 +86,7 @@ alias la='ls -lha'
 alias irb='pry'
 alias serve='ruby -run -e httpd . -p 9090'
 alias gti='git'
+alias dc='docker-compose'
 
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
