@@ -11,7 +11,7 @@ export EDITOR="vim"
 [ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
 
 function __git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]]
+  [[ $(git status 2> /dev/null | tail -n1) != *"working tree clean"* ]]
 }
 
 function __git_branch {
