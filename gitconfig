@@ -18,10 +18,14 @@
   st = status -sb
   co = checkout
   cm = commit
+  cma = commit --amend
+  pl = pull
   df = diff
   ds = diff --stat
   rb = rebase
-  pl = pull
+  rbi = rebase -i HEAD~16
+  rbc = rebase --continue
+  rba = rebase --abort
   search = log -S
   branches = branch --sort=-committerdate
 

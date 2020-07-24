@@ -33,13 +33,6 @@ if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
   PROMPT="[%{$fg[cyan]%}%m%{$reset_color%}] $PROMPT"
 fi
 
-# add rbenv to path
-PATH=$HOME/.rbenv/bin:/usr/local/share/npm/bin:$PATH
-
-export GREP_OPTIONS='--color=auto --exclude=*.swp --exclude-dir=.git'
-export SVN_EDITOR=vim
-export PAGER='less -R'
-
 setopt append_history
 setopt inc_append_history
 setopt extended_history
@@ -76,21 +69,46 @@ bindkey '^[[B' down-line-or-search
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
 
+alias ..='cd ..'
 alias be='bundle exec'
 alias bake='bundle exec rake'
-alias ..='cd ..'
-alias g='grep -inr'
+alias c='cargo'
+alias dc='docker-compose'
+alias p3='python3'
+alias py='python'
+alias gti='git'
 alias gl='git log --graph --pretty="format:$fg[yellow]%h$fg[green]%d$reset_color %s $fg_bold[black]%an, %ar$reset_color"'
-alias ll='ls -lh'
-alias la='ls -lha'
+# alias ll='ls -lh'
+# alias la='ls -lha'
+alias ls='exa'
+alias ll='exa -l --git --time-style=full-iso'
+alias lh='nmap -sn 192.168.1.0/24'
+alias t='tmux'
 alias irb='pry'
 alias serve='ruby -run -e httpd . -p 9090'
 alias gti='git'
 alias dc='docker-compose'
 
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+alias m="make"
+
+alias y="yarn"
+alias ..="cd .."
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+PATH=$HOME/.rbenv/bin:$PATH
+PATH=/usr/local/share/npm/bin:$PATH
+PATH=/usr/local/go/bin:$PATH
+export PATH=$PATH
+
+export SVN_EDITOR=vim
+export PAGER='less -R'
+
+eval "$(rbenv init -)"
+
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+
+eval "$(direnv hook zsh)"
