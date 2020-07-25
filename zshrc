@@ -81,6 +81,7 @@ alias gl='git log --graph --pretty="format:$fg[yellow]%h$fg[green]%d$reset_color
 # alias ll='ls -lh'
 # alias la='ls -lha'
 alias ls='exa'
+alias la='exa -la'
 alias ll='exa -l --git --time-style=full-iso'
 alias lh='nmap -sn 192.168.1.0/24'
 alias t='tmux'
